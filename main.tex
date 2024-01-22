@@ -1,0 +1,41 @@
+\documentclass[acmsmall, 10pt]{acmart}
+\bibliographystyle{ACM-Reference-Format}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{hyperref}
+
+\title{Progetto FIA LikingSongs}
+\author{Citro Giovanni}
+\date{January 2024}
+
+\begin{document}
+
+\maketitle
+
+\section{Definizione del Problema}
+Il sistema prevede un modello di classificazione in cui le canzoni vengono messe nei preferiti, quindi viene deciso dall'utente se una canzone piace(1) o no(0) e a quel punto, tramite i dati ottenuti dall'utente, il sistema sarà in grado di predire se una canzone piace o meno all'utente in questione.
+Il dataset è stato reperibile grazie al sito Kaggle.
+\\
+\section{Specifica dell'ambiente}
+\subsection{Performance}
+La misura di performance dell’agente è la sua capacità di avvicinarsi quanto
+più possibile ad una situazione ideale nella quale vengono mostrati agli utenti
+esattamente il valore che ci indica se una canzone piace(1) o no(0) in base al dataset con l'aggiunta della colonna Liking.
+\subsection{Envoirenment}
+
+\subsection{Actuators}
+Gli attuatori dell’agente consistono nella lista di canzoni con un parametro che ci dice quale canzone può piacere e quale no.
+
+\subsection{Sensors}
+ciao
+\\
+\section{Raccolta, Analisi e Scrematura del dataset}
+\subsection{Scelta del dataset}
+Per i dataset del modello di classificazione ho usato la strada più semplice, ovvero quella di cercare un dataset con le canzoni di spotify e i suoi attributi. Infine ho creato un dataset inserendo la colonna che mi serviva per far apprendere al modello i valori di gradimento da predire.
+\subsection{Analisi e scrematura del dataset}
+Guardando bene il dataset ho visto che alcune colonne erano inutili al mio intento e quindi sono andato ad eliminarle(added, top year, acous, spch, pop, dB, live, nrgy, dnce, bpm), poi ho formattato alcuni valori all'interno di alcune colonne come: Anno di Rilascio, Durata e Tipo di Artista.
+\\
+Il progetto completo fatto su colab è presente sul mio \href{https://github.com/Kid-John/FiaProject.git}{github}.
+
+
+
+\end{document}
